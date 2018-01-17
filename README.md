@@ -11,10 +11,10 @@ more detailed information about the air quality.
 
 ![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
 ***  
-#usage:
+#usage:  
 *code*  
-    hello()
-    world()
+    hello()  
+    world()  
 ***  
 #reference:  
 * [SGP30 Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf)  
