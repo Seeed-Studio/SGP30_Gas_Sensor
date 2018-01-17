@@ -10,12 +10,12 @@ metal-oxide gas sensor featuring multiple sensing elements on one chip, the SGP3
 more detailed information about the air quality.  
 
 ![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
-***
+***  
 #usage:
 *code*  
     hello()
-	world()
-***
+    world()
+***  
 #reference:  
 * [SGP30 Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf)  
 * [Driver Integration](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Driver-Integration-Guide_HW_I2C.pdf)  
