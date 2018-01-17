@@ -31,9 +31,11 @@ You can refer to program flow chart blow**
 ln(C/Cref)=(Sref-Sout)/a
 with a = 512, sref the H2_signal or Ethanol_signal output at the reference concentration, and sout = Sout_H2 or Sout = Sout_EthOH.**  
 * **For more accurate measurement,You can set the abslute humidity compensation,Defalt value is 11.57g/m3,A little troublesome is
-that you should get humidity value of environment from another way,Because there is no humidity measurement part integrated in SGP30..
+that you should get relatively humidity value of environment from another way,Because there is no humidity measurement part integrated in SGP30..
+![Humidity caculation formula](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/absolute%20humidity%20with%20the%20formula.png)  
 Luckly, It's not much neccessary in a normal situation**  
-***Talk is cheap,Refer to the code!*** 
+***Talk is cheap,Refer to the code!All relevant code is in /examples/sgp30_test/sgp30_test.ino***  
+
 reference:  
 ============
 * [SGP30 Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf)  
