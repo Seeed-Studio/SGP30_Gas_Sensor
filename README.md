@@ -1,7 +1,10 @@
-# SGP30_Gas_Sensor
-## A arduino example for SGP30_Gas_Sensor,Measurement of TVOC and CO2
+SGP30_Gas_Sensor  
+==================
+A arduino example for SGP30_Gas_Sensor,Measurement of TVOC and CO2
+------------------------------------------------------------------
 ***
-## Introduction of sensor
+Introduction of sensor  
+----------------------
 The SGP30 is a digital multi-pixel gas sensor designed foreasy integration into air purifier,
 demand-controlledventilation, and IoT applications. Sensirion’s CMOSens®technology offers a 
 complete sensor system on a single chip featuring a digital I2C interface, a temperature 
@@ -11,12 +14,14 @@ more detailed information about the air quality.
 
 ![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
 ***  
-#usage:  
+usage:  
+===========
 *code*  
     hello()  
     world()  
 ***  
-#reference:  
+reference:  
+============
 * [SGP30 Datasheet](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf)  
 * [Driver Integration](https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9_Gas_Sensors/Sensirion_Gas_Sensors_SGP30_Driver-Integration-Guide_HW_I2C.pdf)  
 
