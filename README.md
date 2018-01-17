@@ -14,8 +14,24 @@ more detailed information about the air quality.
 
 ![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
 ***  
-usage:  
+Usage:  
 ===========
+Download all the source files and open /examples/sgp30_test/sgp30_test.ino in arduino IDE.
+Compile and download and run it on a arduino board.
+
+Notice:
+----------
+* **The SGP30 uses a dynamic baseline compensation algorithm and on-chip calibration parameters to provide two
+complementary air quality signals. The baseline should be stored in eeprom.When there is no baseline value
+in eeprom at the first time power-ON or the baseline record is older than seven days.the sensor has to run
+for 12 hours until the baseline can be stored,refer to program flow chart blow**  
+![baseline operation](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/Get%20baseline%20program%20flow%20chart%20.png)  
+* **The H2_Signal and Ethanol_signal,Both signals can be used to calculate gas concentrations c relative to a reference concentration cref by
+ln(C/Cref)=(Sref-Sout)/a
+with a = 512, sref the H2_signal or Ethanol_signal output at the reference concentration, and sout = Sout_H2 or Sout = Sout_EthOH.**  
+* **For more accurate measurement,you can set the abslute humidity compensation,defalt value is 11.57g/m3,A little troublesome is
+you should get humidity value of environment from another way,because there is no humidity measurement part integrated in SGP30..
+Luckly, it's not much neccessary in a normal situation**
 *code*  
 ```
     hello()  
