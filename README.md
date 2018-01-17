@@ -12,7 +12,7 @@ more detailed information about the air quality.
 ![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
 ***
 #usage:
-
+*code*  
     hello()
 	world()
 ***
