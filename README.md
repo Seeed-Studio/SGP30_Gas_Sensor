@@ -16,7 +16,7 @@ more detailed information about the air quality.
 ***  
 Usage:  
 ===========
-Download all the source files and open /examples/sgp30_test/sgp30_test.ino in arduino IDE.
+Download all the source files and open examples/sgp30_test/sgp30_test.ino in arduino IDE.
 Compile and download and run it on a arduino board.
 
 Notice:
@@ -34,7 +34,7 @@ with a = 512, sref the H2_signal or Ethanol_signal output at the reference conce
 that you should get relatively humidity value of environment from another way,Because there is no humidity measurement part integrated in SGP30..
 ![Humidity caculation formula](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/absolute%20humidity%20with%20the%20formula.png)  
 Luckly, It's not much neccessary in a normal situation**  
-* ***Talk is cheap,Refer to the code!All relevant code is in /examples/sgp30_test/sgp30_test.ino***  
+* ***All relevant example is in examples/,To get more detail***  
 
 reference:  
 ============
