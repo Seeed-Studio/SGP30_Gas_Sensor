@@ -6,7 +6,15 @@
 
 #define LOOP_TIME_INTERVAL_MS  1000
 #define BASELINE_IS_STORED_FLAG  (0X55)
-#define ARRAY_TO_U32(a)  (a[0]<<24|a[1]<<16|a[2]<<8|a[3])    //MSB first
+//#define ARRAY_TO_U32(a)  (a[0]<<24|a[1]<<16|a[2]<<8|a[3])    //MSB first  //Not suitable for 8-bit platform
+
+void array_to_u32(u32 *value,u8* array)
+{
+  (*value) =(*value)|(u32)array[0]<<24;
+  (*value) =(*value)|(u32)array[1]<<16;
+  (*value) =(*value)|(u32)array[2]<<8;
+  (*value) =(*value)|(u32)array[3];
+}
 void u32_to_array(u32 value,u8* array)
 {
   if(!array)
@@ -28,7 +36,7 @@ void  store_baseline(void)
   u8 value_array[4]={0};
   i++;
    Serial.println(i);
-  if(i==1800)
+  if(i==3600)
   {
     i=0;
     if(sgp_get_iaq_baseline(&iaq_baseline)!=STATUS_OK)
@@ -37,6 +45,7 @@ void  store_baseline(void)
        }
        else
        {
+        Serial.println(iaq_baseline,HEX);
         Serial.println("get baseline");
         u32_to_array(iaq_baseline,value_array);
         for(j=0;j<4;j++){
@@ -62,7 +71,7 @@ void set_baseline(void)
   for(i=0;i<5;i++)
   {
     baseline[i]= EEPROM.read(i);
-    Serial.print(baseline[i]);
+    Serial.print(baseline[i],HEX);
     Serial.print("..");
    }
    Serial.println("!!!");
@@ -77,8 +86,9 @@ void set_baseline(void)
     return;
     }
     */
-    baseline_value=ARRAY_TO_U32(baseline);
+    array_to_u32(&baseline_value,baseline);
     sgp_set_iaq_baseline(baseline_value);
+     Serial.println(baseline_value,HEX);
 }
 
 
@@ -103,7 +113,7 @@ all APIs measuring IAQ(Indoor air quality ) output will not change.Default value
     } else {
          Serial.println("error reading signals"); 
     }
-     err = sgp_iaq_init();
+    // err = sgp_iaq_init();
      set_baseline();
      //
 }
