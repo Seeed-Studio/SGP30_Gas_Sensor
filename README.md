@@ -16,7 +16,7 @@ more detailed information about the air quality.
 ***  
 Usage:  
 ===========
-Download all the source files and open examples/*/*.ino in arduino IDE.
+Download all the source files and open examples/ * / *.ino in arduino IDE.
 Compile and download and run it on a arduino board.
 
 Notice:
