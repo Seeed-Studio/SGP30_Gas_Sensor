@@ -12,7 +12,6 @@ controlled micro hotplate, and two preprocessed indoor air quality signals. As t
 metal-oxide gas sensor featuring multiple sensing elements on one chip, the SGP30 provides 
 more detailed information about the air quality.  
 
-![physical map](https://github.com/linux-downey/SGP30_Gas_Sensor/blob/master/pictures/SGP30%20physical%20map.png)  
 ***  
 Usage:  
 ===========
