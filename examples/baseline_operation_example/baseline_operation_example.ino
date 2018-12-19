@@ -99,6 +99,15 @@ void setup() {
     u16 scaled_ethanol_signal, scaled_h2_signal;
   Serial.begin(115200);
   Serial.println("serial start!!");
+
+  /*For wio link!*/
+  #if defined(ESP8266)
+          pinMode(15,OUTPUT);
+          digitalWrite(15,1);
+          Serial.println("Set wio link power!");
+          delay(500);
+  #endif
+  
   /*Init module,Reset all baseline,The initialization takes up to around 15 seconds, during which
 all APIs measuring IAQ(Indoor air quality ) output will not change.Default value is 400(ppm) for co2,0(ppb) for tvoc*/
   while (sgp_probe() != STATUS_OK) {
