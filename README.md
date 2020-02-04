@@ -1,4 +1,4 @@
-SGP30_Gas_Sensor  
+SGP30_Gas_Sensor    [![Build Status](https://travis-ci.com/Seeed-Studio/SGP30_Gas_Sensor.svg?branch=master)](https://travis-ci.com/Seeed-Studio/SGP30_Gas_Sensor)
 ==================
 A arduino example for SGP30_Gas_Sensor,Measurement of TVOC and CO2
 ------------------------------------------------------------------
